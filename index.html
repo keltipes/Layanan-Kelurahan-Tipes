@@ -186,4 +186,38 @@
         <div>
           <span class="chip">Layanan #4</span>
           <h3>Update Desil</h3>
-          <p>P
+          <p>Pembaruan data desil (DTKS) untuk pendataan kesejahteraan sosial masyarakat Tipes.</p>
+        </div>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScnMH0MJO6tgEeJGWTXBN9oLPJXjrTm4MHlIaKII-kngXUl3g/viewform" target="_blank" rel="noopener noreferrer">Update Data</a>
+      </article>
+    </section>
+
+    <section id="kontak" class="container" style="margin-top:36px;">
+      <div class="card">
+        <h3>Kontak & Informasi</h3>
+        <p>Silakan hubungi petugas layanan untuk informasi lebih lanjut atau bantuan proses berkas.</p>
+        <ul>
+          <li>Email: <a href="mailto:sek.keltipes@gmail.com">sek.keltipes@gmail.com</a></li>
+          <li>Telepon/WA: <a href="https://wa.me/message/3T7RSB5HBWM7J1" target="_blank" rel="noopener noreferrer">+62 851-7684-4461</a> </li>
+          <li>Alamat: Jl. Cokrobaskoro III, Kelurahan Tipes, Kota Surakarta</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Kelurahan Tipes • Semua hak cipta dilindungi.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const dropdown = document.querySelector('.dropdown');
+    const btn = dropdown?.querySelector('button');
+    if (dropdown && btn) {
+      dropdown.addEventListener('mouseenter', () => btn.setAttribute('aria-expanded', 'true'));
+      dropdown.addEventListener('mouseleave', () => btn.setAttribute('aria-expanded', 'false'));
+    }
+  </script>
+</body>
+</html>
